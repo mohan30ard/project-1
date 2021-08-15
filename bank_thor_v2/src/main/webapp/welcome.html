@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta name="Description" content="Enter your description here" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.6.0/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+    <title>Title</title>
+
+</head>
+
+<body>
+    <!-- <style>
+        background-image:url('https://images-na.ssl-images-amazon.com/images/G/01/digital/video/hero/Movies/2013/ThorDarkWorld_2194942100-TDW0NNG1._SX1080_.jpg')
+    </style> -->
+    <nav class="navbar navbar-expand-lg navbar-light bg-light fixed-top">
+        <a class="navbar-brand">ThorBank</a>
+        <button class="navbar-toggler" data-target="#my-nav" data-toggle="collapse" aria-controls="my-nav"
+            aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div id="my-nav" class="collapse navbar-collapse">
+            <ul class="navbar-nav mr-auto">
+                <li class="nav-item active">
+                    <a class="nav-link" href="http://localhost:8080/bank_thor_v2/employee.html">Employee Login <span
+                            class="sr-only">(current)</span></a>
+                </li>
+                <li class="nav-item active">
+                    <a class="nav-link" href="#">About us <span class="sr-only">(current)</span></a>
+                </li>
+                <li class="nav-item active">
+                    <a class="nav-link" href="http://localhost:8080/bank_thor_v2/contactus.html">Contact us <span class="sr-only">(current)</span></a>
+                </li>
+                <!-- <li class="nav-item">
+                    <a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true">Item 2</a>
+                </li> -->
+            </ul>
+        </div>
+    </nav>
+    <br><br><br>
+    <div class="header">
+        <center>
+            <h2>Welcome to Thor Bank V2.0 </h2>
+        </center>
+    </div>
+    <div class="container">
+        <form action="login" method="get">
+            <label>UserId</label>
+            <input class="form-control" type="text" name="userid" placeholder="ENTER USERID">
+            <label>Password</label>
+            <input class="form-control" type="password" name="password" placeholder="ENTER PASSWORD"><br>
+            <input type="checkbox" required> confirm details <br>
+            <button class="btn btn-primary" type="submit" value="Login">Login</button><br><br>
+        </form>
+    </div>
+    <div class="container">
+        <h2>New to Thor Bank</h2>
+        <h5>Click Here To SignUp</h5>
+        <button class="btn btn-primary" type="submit" id="signup">SignUp</button>
+    </div>
+
+
+    <script type="text/javascript">
+
+    </script>
+    <script type="text/javascript">
+        document.getElementById("signup").onclick = function () {
+            location.href = "http://localhost:8080/bank_thor_v2/registern.html";
+        };
+
+    </script>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.slim.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.1/umd/popper.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.6.0/js/bootstrap.min.js"></script>
+</body>
+
+</html>

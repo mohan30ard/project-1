@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.6.0/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+    <title>Forms</title>
+</head>
+
+<body>
+    <div class="container">
+        <br>
+        <div class="border p-4">
+            <h4>Welcome To SignUp Page</h4>
+            <div id="results">
+
+            </div>
+            <form method="POST" id="form1" action="successa">
+                <div class="form-group w-50">
+                    <label >Enter FirstName</label> <input class="form-control " type="text" id="firstname" placeholder="thor" > 
+                    <p style="color: red;" id="errorFirstName"></p>
+                    <label >Enter LastName</label> <input class="form-control " type="text" id="lastname" placeholder="Ragnorak"> 
+                    <p style="color: red;" id="errorLastName"></p>
+                    <label >Enter EmailId</label> <input class="form-control " type="email" id="emailid" placeholder="thor-ragnarok@gmail.com"> 
+                    <p style="color: red;" id="errorEmailId"></p>
+                    <label >Enter MobileNumber</label> <input class="form-control " type="number" id="mobilenumber" placeholder="1234567890"> 
+                    <p style="color: red;" id="errorMobileNumber"></p>
+                    <label >Enter UserId</label> <input class="form-control " type="text" id="userid" placeholder="thorragnor" >
+                    <p style="color: red;" id="errorUserId"></p>
+                    <label >Enter Password</label> <input class="form-control " type="password" id="password" placeholder="Password"> 
+                    <p style="color: red;" id="errorPassword"></p> <br>
+                    <input type="checkbox" required> confirm details <br>
+                    <input class="btn btn-primary" type="submit" value="Signup">
+                </div>
+            </form>
+        </div>
+    </div>
+    <!-- <div class="container" id="results">
+    
+    </div> -->
+</body>
+
+<script src="validv.js">
+
+</script>
+
+</html>

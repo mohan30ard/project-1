@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.6.0/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+    <title>Deposit</title>
+    <link rel="stylesheet" href="newindex.css">
+</head>
+
+<body>
+    <ul>
+
+        <li><a  href="/bank_thor_v2/index.html">Home</a></li>
+        <li><a href='/bank_thor_v2/newaccount.html'>OpenAccount</a></li>
+        <li><a href='/bank_thor_v2/accounts.html'>MyAccounts</a></li>
+        <li><a class="active" href='/bank_thor_v2/transaction.html'>Deposit</a></li>
+        <li><a href='/bank_thor_v2/transactionw.html'>Withdraw</a></li>
+        <li><a href='/bank_thor_v2/statement.html'>Statements</a></li>
+        <li><a href="#contact">ContactUs</a></li>
+        <li><a href='logout'>Logout</a></li>
+    </ul>
+
+    <div class="container" style="margin-left:25%;padding:1px 16px;height:1000px;">
+        <br>
+        <div class="border p-4">
+            <h4>Welcome To Desposit Page</h4>
+            <div id="results">
+
+            </div>
+            <form method="POST" id="form3" action="deposit">
+                <div class="form-group w-50">
+                    <label>Enter Account Number</label> <input class="form-control " type="number" id="accountnumber"
+                        placeholder="3702427000">
+                    <p style="color: red;" id="errorAccountNumber"></p>
+                    <label>Enter Amount to Deposit</label> <input class="form-control " type="number" id="amount"
+                        placeholder="99999">
+                    <p style="color: red;" id="errorAmount"></p>
+                    <!-- <label>Enter OpeningBlance Amount</label> <input class="form-control " type="number"
+                        id="openingbalance" placeholder="99999">
+                    <p style="color: red;" id="errorOpeningBalance"></p> -->
+                    <input class="btn btn-primary" type="submit" value="Deposit" id="deposit">
+                </div>
+            </form>
+            <div id="results">
+
+            </div>
+        </div>
+    </div>
+</body>
+<script src="transaction.js">
+
+</script>
+
+</html>

@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta name="Description" content="Enter your description here" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.6.0/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+    <title>Delete</title>
+</head>
+
+<body>
+    <div class="jumbotron">
+        <h1 class="display-4">Welcome to Thor Delete Account</h1>
+        <p class="lead">Please enter your Account Number to Delete</p>
+        <hr class="my-4">
+    </div>
+    <div class="container">
+        <label>Enter accountNumber</label>
+        <input class="form-control " type="text" id="accountNumber" placeholder="3702427000"><br>
+        <input class="btn btn-primary" type="submit" value="delete" id="d1">&nbsp;&nbsp;&nbsp;&nbsp;
+        <input class="btn btn-primary" type="button" value="Back" id="d2"><br>
+        <br><br>
+        <div id="results">
+
+        </div>
+
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.slim.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.1/umd/popper.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.6.0/js/bootstrap.min.js"></script>
+</body>
+<script>
+    d1.onclick = () => {
+        let url = "http://localhost:8080/bank_thor_v2/delete";
+
+        fetch(url, {
+            method: 'POST', body: JSON.stringify({
+                accountNumber: document.getElementById('accountNumber').value,
+            }),
+            headers: { 'Content-type': 'application/json; charset=UTF-8', },
+        })
+        alert("Account deleted Succesfully");
+        // location.href="customertask.html";
+
+    }
+
+    // d1.onclick = () => {
+    //     let value1 = document.getElementById("accountnumber1").value;
+    //     if (value1 === '' || value1.length == 0) {
+    //         1
+    //         alert("value is empty cannot continue the search");
+    //         return;
+    //     }//http://localhost:8080/bank_thor_v2/userid?userid=8977
+    //     let url = "/bank_thor_v2/delete?accountnumber=" + value1;
+    //     fetch(url)
+    //         .then(response => response.json())
+
+    //         })
+    // }
+    document.getElementById("d2").onclick = function () {
+        location.href = "http://localhost:8080/bank_thor_v2/empindex.html";
+    };
+
+
+
+
+
+
+</script>
+
+</html>
